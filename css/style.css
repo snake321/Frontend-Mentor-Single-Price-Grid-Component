@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+.attribution {
+        font-family: 'karla', sans-serif;
+     font-size: 11px; text-align: center; }
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+:root{ --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+
+                                                          
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    /* background-color: #f0f0f0; */
+    background-color:var(--LightGray);
+    width: 100%;
+    height:100vh;
+    display: grid;
+    max-width: 1440px;
+    place-items: center;
+    margin: 0 auto;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+.container{position: relative;
+    border-radius:5px;
+    box-shadow: 0px -1px 10px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -1px 10px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 10px -5px rgba(0,0,0,0.75);
+    width:70rem;
+   
+}
+
+header{
+    border-radius: 5px 5px 0px 0px ;
+    background-color:#fff;
+padding: 5rem 4rem;
+}
+header .main_headings{
+    font-size: 2.5rem;
+    font-family: 'karla', sans-serif;
+    font-weight:700;
+    color: var(--Cyan);
+}
+header h2{
+    font-family: 'karla', sans-serif;
+font-size: 1.5rem;
+margin: 2rem 0rem;
+letter-spacing:1px;
+color: var(--Bright-Yellow);
+}
+header .paragraph{
+    font-size: 1.5rem;
+    font-family: 'karla', sans-serif;
+ color: var(--Grayish-Blue);   
+ line-height: 20px;
+}
+main .main_container{
+    display: flex;
+    height: 100%;
+    width:100%;
+    }
+main .s1 {
+    background-color:var(--Cyan);
+    padding: 5rem 4rem;
+    width:50%;
+}
+
+.s1 ul li,.s2 ul li{
+    list-style: none;
+}
+.s1 .mainh{
+    color: var(--LightGray);
+    font-size: 2rem;
+    font-family: 'karla', sans-serif;
+    font-family: 'karla', sans-serif;
+font-weight:700;
+}
+.s1 .fees{
+    color: var(--LightGray);
+    font-size: 3rem;
+    font-family: 'karla', sans-serif;
+    font-weight:700;
+margin: 2rem 0rem ;
+}
+.s1 .fees a {
+    color: var(--LightGray);
+    /* color: var(--Grayish-Blue); */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.s1 .para{
+    color: var(--LightGray);
+    font-family: 'karla', sans-serif;
+    font-size: 1.6rem;
+    text-align: left;    
+}
+.s1 .btn{
+    display: inline-block;
+    text-decoration: none;
+    margin:2rem auto;
+    text-align: center;
+    color: var(--LightGray);
+    font-family: 'karla', sans-serif;
+    font-size: 2rem;
+background-color:var(--Bright-Yellow);
+padding: 1rem;
+border-radius:5px;
+box-shadow: 0px 7px 9px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 9px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 9px -5px rgba(0,0,0,0.75);
+cursor: pointer;
+transition: transform 500ms ease-in-out;
+width:25rem;
+color: #fff;
+}
+.s1 .btn:hover{
+    transform:scale(.95);
+}
+.s2{
+    background-color:#4abebd;
+    height:100%;
+padding: 5rem 4rem;
+width:50%;
+
+}
+.s2 h2{ 
+    font-size: 2rem;
+    color: var(--LightGray);
+    font-weight: 700;
+    font-family: 'karla', sans-serif;
+
+}
+.s2 ul {
+
+    margin-top: 2rem;
+}
+.s2 ul li {
+    font-family: 'karla', sans-serif;
+    color: var(--LightGray);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height:25px;
+    
+}
+
+@media screen and (max-width:800px){
+
+html{
+    font-size:50%;
+}
+.container{width:50rem;
+    margin:10% 0%;
+}
+main .main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    main .s1,.s2{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px){
+    
+html{
+    font-size:45%;
+}    
+.container{width:40rem;}
+}
